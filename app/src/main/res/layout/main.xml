@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleepText"
+        android:text="@string/sleep"
+        android:visibility="visible"
+        android:textSize="@dimen/text_sleep"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"/>
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:textSize="@dimen/text_sleep"
+        android:visibility="gone"
+        android:layout_below="@+id/sleepText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"/>
+
+    <ImageView android:id="@+id/sleepButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:layout_marginTop="0px"
+        android:background="@drawable/background_normal"
+        android:src="@drawable/sleep"
+        />
+</LinearLayout>
